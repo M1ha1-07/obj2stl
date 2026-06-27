@@ -1,31 +1,29 @@
 # obj2stl
 
-A lightweight, client-side web utility that converts `.obj` 3D meshes into binary `.stl` files optimized for 3D printing slicers.
+A simple, client-side web utility that converts `.obj` files into binary `.stl` files for 3D printing.
 
-Most online converters require uploading proprietary models to a remote server, sit behind paywalls, or are bloated with ads. This tool is built to be a quiet, offline-capable utility. 
-
-**Zero backend. Zero uploads. Zero telemetry.** All geometry processing happens entirely in your browser's active memory.
+Most online converters upload your files to remote servers or make you sit through ads. I wanted something quiet that I could just drag and drop into. **Everything processes locally in your browser.**
 
 ## Features
 
-* **100% Local Processing:** Utilizes WebGL and Three.js for native-speed in-browser conversion.
-* **Binary STL Export:** Compiles straight to binary `.stl` (stripping heavy color/texture data) to keep files compact for slicers like Cura and PrusaSlicer.
-* **PWA Ready:** Can be installed as a standalone desktop or mobile application for offline use.
-* **Zero Build Step:** Uses vanilla JavaScript and ES modules. No Node.js, Webpack, or npm required to run the core app.
+* **100% Local:** Uses WebGL and Three.js for in-browser conversion. Your files never leave your machine.
+* **Binary STL Export:** Exports as a binary `.stl` (stripping out heavy color/texture data) to keep file sizes small for slicers.
+* **PWA Support:** Install it as a standalone app and use it offline.
+* **Vanilla JS:** Uses native ES modules. No Node.js, Webpack, or build steps needed.
 
 ## Tech Stack
 
-* **Logic:** [Three.js](https://threejs.org/) (`OBJLoader` & `STLExporter`)
-* **Styling:** Tailwind CSS (via CDN)
-* **Architecture:** Vanilla JS + HTML5 File API
+* [Three.js](https://threejs.org/) (`OBJLoader` & `STLExporter`)
+* Tailwind CSS (via CDN)
+* Vanilla JS & HTML5 File API
 
 ## Local Development
 
-Because this project uses modern JavaScript ES modules (`import`/`export`), you cannot run it by simply double-clicking the `index.html` file. It must be served over a local HTTP server due to browser security policies (CORS).
+Because this project uses ES modules (`import`/`export`), you can't run it by just double-clicking `index.html`. You have to serve it over local HTTP to avoid browser CORS errors.
 
 **Using Python:**
 ```bash
-# Navigate to the project folder
+# Navigate to the folder
 cd obj2stl
 
 # Start a local server
