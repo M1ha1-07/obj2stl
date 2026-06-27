@@ -1,0 +1,21 @@
+{
+  "name": "obj2stl Converter",
+  "short_name": "obj2stl",
+  "description": "Offline 3D Mesh Converter",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
