@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Model — obj2stl.xyz</title>
+    <title>Privacy — obj2stl.xyz</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-[#fafafa] text-slate-900 min-h-screen flex flex-col font-sans antialiased">
@@ -23,31 +23,30 @@
     <main class="max-w-3xl mx-auto px-6 py-16 w-full flex-grow">
         
         <div class="space-y-2 mb-10">
-            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Privacy & Security Model</h2>
+            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Privacy Policy</h2>
             <p class="text-sm text-slate-500 font-mono">Last updated: June 27, 2026</p>
         </div>
 
         <div class="space-y-8 text-sm text-slate-700 leading-relaxed">
             
             <section class="space-y-3">
-                <h3 class="text-base font-semibold text-slate-900 border-b border-slate-200 pb-2">1. Zero-Data Architecture</h3>
-                <p>This utility operates on a strict <strong>Client-Side Processing</strong> model. We do not rent, own, or operate backend file servers. When you select a 3D model, the file is never transmitted over the internet.</p>
-                <p>The conversion from OBJ to Binary STL happens entirely inside your device's active memory (RAM) using standard WebGL and JavaScript execution.</p>
+                <h3 class="text-base font-semibold text-slate-900 border-b border-slate-200 pb-2">1. Everything happens locally</h3>
+                <p>This tool is 100% client-side. We don't have a backend server for file processing, so your 3D models are never uploaded anywhere. The conversion from OBJ to STL happens directly in your browser's memory using JavaScript.</p>
             </section>
 
             <section class="space-y-3">
-                <h3 class="text-base font-semibold text-slate-900 border-b border-slate-200 pb-2">2. Analytics & Tracking</h3>
-                <p>We believe utilities should be quiet. This site does not use Google Analytics, Meta Pixels, or any third-party behavioral trackers. We do not know who you are, where you are from, or what you are converting.</p>
+                <h3 class="text-base font-semibold text-slate-900 border-b border-slate-200 pb-2">2. No tracking</h3>
+                <p>There are no tracking scripts, analytics tools, or ads on this site. I don't know who is using the site or what models are being converted.</p>
             </section>
 
             <section class="space-y-3">
-                <h3 class="text-base font-semibold text-slate-900 border-b border-slate-200 pb-2">3. Cookies & Local Storage</h3>
-                <p>This application does not set any advertising or tracking cookies. If we release future premium features (like batch-processing), a single localized key will be stored in your browser's <code>localStorage</code> to verify your unlock status. This key never leaves your machine.</p>
+                <h3 class="text-base font-semibold text-slate-900 border-b border-slate-200 pb-2">3. Cookies</h3>
+                <p>We don't use any cookies. If we add custom settings in the future, they will be saved to your browser's <code>localStorage</code>, which never leaves your device.</p>
             </section>
 
             <section class="space-y-3 bg-slate-100 p-5 rounded-lg border border-slate-200 mt-8">
                 <h3 class="font-semibold text-slate-900">Verify it yourself</h3>
-                <p class="text-xs text-slate-600">Don't trust, verify. You can view the entire source code for this pipeline to confirm there are no network requests being made during conversion. You can also disconnect your computer from the Wi-Fi before clicking convert—the tool will still work flawlessly.</p>
+                <p class="text-xs text-slate-600">You can check the network tab in your browser's dev tools—no requests are made when you convert a file. You can even disconnect from Wi-Fi right before clicking the file, and it will still work perfectly.</p>
             </section>
 
         </div>
@@ -55,7 +54,7 @@
 
     <footer class="border-t border-slate-200 bg-white px-6 py-5 text-slate-400 text-xs font-mono">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
-            <p>An open web utility for the 3D printing community.</p>
+            <p>A quick web utility for 3D printing.</p>
         </div>
     </footer>
 
